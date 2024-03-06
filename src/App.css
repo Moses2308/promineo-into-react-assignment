@@ -1,38 +1,55 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+/* login form styles */
+.form-container {
+  background-color: white;
+  width: fit-content;
+  margin: auto;
+  margin-top: 3rem;
+}
+.form-container h3 {
   text-align: center;
+  margin-bottom: 1rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-container form > button {
+  border: none;
+  padding: 1em 2em;
+  display: block;
+  width: fit-content;
+  margin: auto;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  background-color: darkcyan;
+  color: white;
+  border-radius: 0.5rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-container form > button:hover {
+  transition: background-color 0.1s ease-out;
+  cursor: pointer;
+  background-color: rgba(0, 139, 139, 0.69);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* navbar styles */
+.pageNav {
+  background-color: grey;
+  color: white;
+  font-weight: 600;
+}
+.pageNav ul {
+  list-style-type: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: right;
+}
+.pageNav a {
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.pageNav ul li {
+  padding: 1.5rem 2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pageNav ul li:hover {
+  transition: all 0.1s ease-out;
+  background-color: white;
+  color: grey;
 }
